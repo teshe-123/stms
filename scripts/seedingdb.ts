@@ -1,10 +1,10 @@
-import { faker } from "@faker-js/faker";
-import { db } from "@/db";
-import { students } from "@/db/schema";
-import { InferSelectModel, eq } from "drizzle-orm";
-// or, if desiring a different locale
-// import { fakerDE as faker } from '@faker-js/faker';
-import "dotenv/config";
+// import { faker } from "@faker-js/faker";
+// import { db } from "@/db";
+// import { students } from "@/db/schema";
+// import { InferSelectModel, eq } from "drizzle-orm";
+// // or, if desiring a different locale
+// // import { fakerDE as faker } from '@faker-js/faker';
+// import "dotenv/config";
 
 // const randomName = faker.person.fullName(); // Rowan Nikolaus
 // const randomEmail = faker.internet.email(); // Kassandra.Haley@erich.biz
@@ -22,10 +22,10 @@ import "dotenv/config";
 // for the first time I guess
 // InsertUser();
 
-async function queryNameOfUser() {
-  const userName = await db
-    .select()
-    .from(students)
-    .where(eq(students.name, "teshome"));
-  return userName;
-}
+// async function queryNameOfUser() {
+//   const userName = await db
+//     .select()
+//     .from(students)
+//     .where(eq(students.name, "teshome"));
+//   return userName;
+// }
